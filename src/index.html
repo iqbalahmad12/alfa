@@ -53,7 +53,7 @@
             background-size: cover;
             background-position: center;
             transition: opacity 0.5s ease;
-            opacity: 1;
+            opacity: 0.5;
         }
 
         .service-pattern:hover .overlay {
@@ -93,7 +93,7 @@
             background-size: cover;
             background-position: center;
             transition: opacity 0.5s ease;
-            opacity: 1;
+            opacity: 0.5;
         }
 
         .service-pattern-1:hover .overlay {
@@ -133,7 +133,7 @@
             background-size: cover;
             background-position: center;
             transition: opacity 0.5s ease;
-            opacity: 1;
+            opacity: 0.5;
         }
 
         .service-pattern-2:hover .overlay {
@@ -176,6 +176,7 @@
 
         .hover\:bg-img-about:hover {
             background-image: url('img/about.jpeg');
+
         }
     </style>
 </head>
@@ -185,6 +186,61 @@
         style="background-image: url(img/Header-Image.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 85vh;">
         <div class="masthead-gradient ">
             <header id="navbar_top" class="fixed w-full z-50 bg-transparent text-white">
+                <div class="flex items-center px-5">
+                    <div class="flex flex-col md:flex-row items-center justify-between text-center w-full">
+                        <div class="py-2">
+                            <a href="index.php" class="brand js-target-scroll">
+                                <img id="alpha_logo" src="img/Alpha-Logo-White-1.png" class="logo h-10">
+                            </a>
+                        </div>
+                        <div class="py-2">
+                            <a href="index.php" class="brand js-target-scroll">
+                                <img id="beta_logo" src="img/Beta-Logo-White-2.png" class="logo h-12">
+                            </a>
+                        </div>
+                        <div class="py-2">
+                            <a href="index.php" class="brand js-target-scroll">
+                                <img id="delta_logo" src="img/Delta-Logo-White-3.png" class="logo h-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center px-5 mt-2 justify-center">
+                    <div class="menu text-center">
+                        <button id="menu-toggle"
+                            class="navbar-toggler mx-auto block md:hidden bg-gray-800 text-white py-2 px-4 rounded">
+                            MENU <i class="fas fa-bars"></i>
+                        </button>
+                        <div id="menu-content" class="navbar js-navbar hidden md:block">
+                            <nav class="navbar navbar-expand-lg navbar-light pb-10 mx-auto">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav flex flex-col md:flex-row space-x-6">
+                                        <li class="nav-item"><a href="#home"
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Home</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#about"
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">About
+                                                Us</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#services"
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Services</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#mineral"
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Mineral/Royalty
+                                                Owners</a></li>
+                                        <li class="nav-item"><a href="#contact"
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- <header id="navbar_top" class="fixed w-full z-50 bg-transparent text-white">
                 <div class="flex items-center px-5">
                     <div class="flex flex-col md:flex-row items-center justify-between text-center w-full">
 
@@ -214,35 +270,38 @@
                             MENU <i class="fas fa-bars"></i>
                         </button>
                         <div class="navbar js-navbar hidden md:block">
-                            <nav class="navbar navbar-expand-lg navbar-light pb-10 pt-10 mx-auto">
+                            <nav class="navbar navbar-expand-lg navbar-light pb-10 mx-auto">
                                 <div class="collapse navbar-collapse">
                                     <ul class="navbar-nav flex flex-col md:flex-row space-x-6">
                                         <li class="nav-item"><a href="#home"
-                                                class="js-target-scroll text-white hover:text-gray-800">Home</a></li>
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Home</a>
+                                        </li>
                                         <li class="nav-item"><a href="#about"
-                                                class="js-target-scroll text-white hover:text-gray-800">About Us</a>
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">About
+                                                Us</a>
                                         </li>
                                         <li class="nav-item"><a href="#services"
-                                                class="js-target-scroll text-white hover:text-gray-800">Services</a>
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Services</a>
                                         </li>
                                         <li class="nav-item"><a href="#mineral"
-                                                class="js-target-scroll text-white hover:text-gray-800">Mineral/Royalty
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Mineral/Royalty
                                                 Owners</a></li>
                                         <li class="nav-item"><a href="#contact"
-                                                class="js-target-scroll text-white hover:text-gray-800">Contact</a></li>
+                                                class="js-target-scroll hover:underline text-white hover:text-gray-800">Contact</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> -->
 
 
             <!-- Home -->
             <div class="text pt-40 flex justify-center items-center">
-                <h1 class="text-lg md:text-8xl sm:text-2xl text-white"><span
-                        class="typed text-lg md:text-8xl sm:text-2xl text-white"></span> Helix Energy
+                <h1 class="text-4xl md:text-8xl sm:text-2xl mt-60 md:mt-0 text-white">
+                    <span class="typed text-4xl md:text-8xl sm:text-2xl text-white"></span> Helix Energy
                 </h1>
             </div>
 
@@ -255,8 +314,8 @@
                 <img class="object-cover object-center border-2 border-black rounded" alt="hero" src="img/about.jpeg">
             </div>
             <div
-                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-blue-900">ABOUT US</h1>
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
+                <h1 class="title-font sm:text-6xl text-4xl mb-4 font-light text-blue-900">ABOUT US</h1>
                 <p class="mb-8 leading-relaxed sm:text-2xl text-lg">Alpha Helix Energy is an independent Oil and
                     Natural
                     Gas
@@ -378,7 +437,7 @@
                         questions you
                         may have or provide simple contact information changes at <a
                             href="mailto:support@alphahelixenergy.com" target="_blank"
-                            class="text-blue-400 underline">support@alphahelixenergy.com</a>.
+                            class="text-gray-800 underline">support@alphahelixenergy.com</a>.
                     </p>
                     <p class="text-lg leading-relaxed">If you are a royalty/mineral owner and have a transfer of
                         ownership
@@ -386,7 +445,7 @@
                         like to report, please gather the information as depicted below and send it to us via
                         email at
                         <a href="mailto:support@alphahelixenergy.com" target="_blank"
-                            class="text-blue-400 underline">support@alphahelixenergy.com</a>
+                            class="text-gray-900 underline">support@alphahelixenergy.com</a>
                         or by mail to our offices as listed in the contact section.
                     </p>
                 </div>
@@ -395,7 +454,7 @@
                 <div class="w-full lg:w-2/3 px-4">
                     <div class="overflow-x-auto mt-3">
                         <table class="min-w-full border border-primary text-white">
-                            <thead class="bg-blue-400">
+                            <thead class="bg-white text-gray-700">
                                 <tr>
                                     <th class="px-4 py-2">Circumstance</th>
                                     <th class="px-4 py-2">Required Documentation</th>
@@ -450,68 +509,63 @@
                         all
                         necessary attachments. This can be completed by email at <a
                             href="mailto:support@alphahelixenergy.com" target="_blank"
-                            class="text-blue-400 underline">support@alphahelixenergy.com</a>
+                            class="text-gray-900 underline">support@alphahelixenergy.com</a>
                         or standard mail to our offices as listed in the contact section below.</p>
                 </div>
             </div>
 
-            <div class=" space-y-10">
-                <div class="flex flex-col md:flex-row justify-center md:space-x-80">
-                    <div class="">
-                        <h5 class="text-xl font-bold text-white">Alpha Helix Energy Forms</h5>
-                    </div>
-                    <div class="">
-                        <h5 class="text-xl font-bold text-white">Beta Helix Energy Forms</h5>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center space-x-28">
-                    <div class="">
+        </div>
+
+        <div class="">
+            <div class="flex flex-col md:space-x-20 md:flex-row justify-between md:mx-28 mx-6">
+                <div class="flex flex-col items-center md:space-y-10">
+                    <h5 class="text-xl font-bold text-white">Alpha Helix Energy Forms</h5>
+                    <div class="md:space-x-20 flex flex-col py-2 md:flex-row space-y-2 md:space-y-0">
                         <a href="img/AHE_Letterhead-Direct_Deposit_Form.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white py-2 px-2 btn-success mt-4"
+                            class="btn btn-md btn-rounded bg-green-700 text-white py-2 px-2  btn-success "
                             target="_blank">AHE
                             Direct
                             Deposit
                             Form</a>
-                    </div>
-                    <div class="">
                         <a href="img/AHE_W9_Request_Form-highlighted.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success mt-4"
+                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2  btn-success"
                             target="_blank">AHE
                             W9 Request Form</a>
                     </div>
-                    <div class="">
+                </div>
+                <div class="flex justify-center flex-col items-center md:space-y-10">
+                    <h5 class="text-xl font-bold text-white">Beta Helix Energy Forms</h5>
+                    <div class="md:space-x-20 flex flex-col py-2 md:flex-row space-y-2 md:space-y-0">
                         <a href="img/BHE_W9_Request_(highlighted)-2020.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success"
+                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2  btn-success"
                             target="_blank">BHE
                             W9 Request Form</a>
-                    </div>
-                    <div class="">
                         <a href="img/DHEDirectDepositForm.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success mt-4"
+                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success "
                             target="_blank">DHE
                             Direct Deposit Form</a>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="">
-                        <h5 class="text-xl font-bold text-white">Delta Helix Energy Forms</h5>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center space-x-28">
-                    <div class="">
-                        <a href="img/DHEDirectDepositForm.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success mt-4"
-                            target="_blank">DHE
-                            Direct Deposit Form</a>
-                    </div>
-                    <div class="">
-                        <a href="img/DHEW9Request2023.pdf"
-                            class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success"
-                            target="_blank">DHE
-                            W9 Request Form</a>
                     </div>
                 </div>
             </div>
+            <div class="">
+                <div class="">
+                    <div class="flex justify-center flex-col items-center md:space-y-10">
+                        <h5 class="text-xl font-bold text-white">Delta Helix Energy Forms</h5>
+                        <div class="md:space-x-20 flex flex-col  md:flex-row space-y-2 md:space-y-0">
+                            <a href="img/DHEDirectDepositForm.pdf"
+                                class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 btn-success"
+                                target="_blank">DHE
+                                Direct Deposit Form</a>
+
+                            <a href="img/DHEW9Request2023.pdf"
+                                class="btn btn-md btn-rounded bg-green-700 text-white  py-2 px-2 mt-4 btn-success"
+                                target="_blank">DHE
+                                W9 Request Form</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
         </div>
     </section>
@@ -529,18 +583,16 @@
             <div class="flex flex-col md:gap-2 py-4">
                 <div class="md:flex gap-4 text-gray-700">
                     <input type="name" placeholder="First name"
-                        class="border-black border-2 my-2 md:my-0 py-1 px-4 text-lg rounded-md">
-                    <input type="name" placeholder="Second name"
-                        class="border-black border-2 py-1 px-4 text-lg rounded-md">
+                        class=" border-2 my-2 md:my-0 py-1 px-4 text-lg rounded-md">
+                    <input type="name" placeholder="Second name" class=" border-2 py-1 px-4 text-lg rounded-md">
                 </div>
                 <div class="md:flex gap-4 my-4 text-gray-700">
-                    <input type="email" placeholder="E-mail"
-                        class="border-black border-2 py-1 px-4 my-2 md:my-0 text-lg rounded-md">
+                    <input type="email" placeholder="E-mail" class="border-2 py-1 px-4 my-2 md:my-0 text-lg rounded-md">
                     <input type="phone-number" placeholder="Phone number"
-                        class="border-black border-2 py-1 px-4 text-lg rounded-md">
+                        class="border-slate-600 border-2 py-1 px-4 text-lg rounded-md">
                 </div>
                 <textarea name="Message"
-                    class="border-black border-2 text-gray-400 h-24 py-1 px-4 text-lg rounded-md">Message</textarea>
+                    class=" border-2 text-gray-400 h-24 py-1 px-4 text-lg rounded-md">Message</textarea>
                 <p class="md:text-center py-4 text-red-600">Enter CAPTCHA characters exactly as they appear, including
                     the
                     correct
@@ -549,11 +601,11 @@
                     reload.
                 </p>
                 <div class="flex md:items-center md:justify-center gap-4 text-white mt-2 md:mt-0">
-                    <p class="border-2 border-black text-xl px-12 py-2 rounded-sm bg-gray-600">Ez77p</p>
+                    <p class="border-2 text-xl px-12 py-2 rounded-sm bg-gray-600">Ez77p</p>
                     <button
-                        class="border-2 border-black text-xl px-4 py-2 rounded-sm bg-green-600 hover:bg-green-800">Reload</button>
+                        class="border-2 text-xl px-4 py-2 rounded-sm bg-green-600 hover:bg-green-800">Reload</button>
                 </div>
-                <input type="name" class="border-black border-2 py-1 px-4 text-lg rounded-md mt-4 md:mt-0">
+                <input type="name" class="border-2 py-1 px-4 text-lg rounded-md mt-4 md:mt-0">
                 <p class="md:text-center text-2xl">CAPTCHA</p>
                 <div class="md:text-center">
                     <button
@@ -642,7 +694,9 @@
                 }
             });
         });
-    </script>>
+    </script>
+
+
 
 
     <script>
@@ -667,6 +721,16 @@
             menu.classList.toggle('hidden');
         });
     </script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menuContent = document.getElementById('menu-content');
+            if (menuContent.classList.contains('hidden')) {
+                menuContent.classList.remove('hidden');
+            } else {
+                menuContent.classList.add('hidden');
+            }
+        });
+    </script
 </body>
 
 </html>
